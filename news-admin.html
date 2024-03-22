@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="Stylesheet" href = "Style.css">
+    <title>Press Admin Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+  </head>
+  <body>
+    <nav>
+        <img src="index.png">
+
+      <ul class="menu">
+        <li><a href="bio-admin.html" >Home Admin</a></li>
+        <li><a href="pub-admin.html">Publications Admin</a></li>
+        <li><a href="news-admin.html">Press Admin</a></li>
+        <li><a href="research-program-admin.html">Research Intrest and Programs Admin</a></li>
+        <li><a href="teaching-admin.html">Teaching Admin</a></li>
+        <li><a href="group-admin.html">Research Group Admin</a></li>
+        <li><a href="contact-admin.html">Contact Admin</a></li>
+          <li><a href="index.html">Home Page</a></li>
+      </ul>
+    </nav>
+
+  <div style = "text-align : center; "><h1 class = "bkg">Press Admin</h1></div>
+    <div class="AdminForm">
+        <form id="myform" action="" method="post">
+          <p>Press Release </p>
+        <input  class ="form-control" type="text" name="press" placeholder="Add New Press Here" required><br>
+        <p>Press Release </p>
+        <input class ="form-control"type="text" name="press1" placeholder="Add New Press Here" required><br>
+          <p>Press Release </p>
+        <input class ="form-control"type="text" name="press2" placeholder="Add New Press Here" required><br>
+          <p>Press Release </p>
+        <input class ="form-control"type="text" name="press3" placeholder="Add New Press Here" required><br>
+          <p>Press Release </p>
+        <input class ="form-control"type="text" name="press4" placeholder="Add New Press Here" required><br>
+          <button type="submit">Submit</button>
+</div>
+
+
+
+
+<script>
+
+$(document).ready(function(){
+
+$("#myform").validate({
+  rules: {
+    press: {
+     minlength:5
+  },
+
+  press1: {
+   minlength:5
+},
+
+press2: {
+ minlength:5
+},
+
+press3: {
+ minlength:5
+},
+
+press4: {
+ minlength:5
+},
+
+    },
+      messages: {
+        press: {
+          minlength: "Please enter at least 5 characters"
+      },
+
+      press1: {
+        minlength: "Please enter at least 5 characters"
+    },
+
+    press2: {
+      minlength: "Please enter at least 5 characters"
+  },
+
+  press3: {
+    minlength: "Please enter at least 5 characters"
+},
+
+press4: {
+  minlength: "Please enter at least 5 characters"
+},
+
+      }
+    });
+});
+
+</script>
+
+  </body>
+</html>

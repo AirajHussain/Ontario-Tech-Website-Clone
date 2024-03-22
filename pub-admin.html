@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="Stylesheet" href = "Style.css">
+    <title>Publication Admin Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+  </head>
+
+  <body>
+    <nav>
+        <img src="index.png">
+
+      <ul class="menu">
+        <li><a href="bio-admin.html" >Home Admin</a></li>
+        <li><a href="pub-admin.html">Publications Admin</a></li>
+        <li><a href="news-admin.html">Press Admin</a></li>
+        <li><a href="research-program-admin.html">Research Intrest and Programs Admin</a></li>
+        <li><a href="teaching-admin.html">Teaching Admin</a></li>
+        <li><a href="group-admin.html">Research Group Admin</a></li>
+        <li><a href="contact-admin.html">Contact Admin</a></li>
+          <li><a href="index.html">Home Page</a></li>
+      </ul>
+    </nav>
+
+    <div style = "text-align : center; "><h1 class = "bkg">Publication Admin</h1></div>
+
+    <div class="AdminForm">
+        <form id="myform" action="" method="post">
+        <p> Publications</p>
+        <input class ="form-control" type="text" name="publication" placeholder="Publication List" required><br>
+        <p>Type of Publication</p>
+        <input class ="form-control" type="text" name="type" placeholder="Type of Publication" required><br>
+        <button type="submit">Submit</button>
+</form>
+</div>
+
+
+
+
+<script>
+$(document).ready(function(){
+
+$("#myform").validate({
+  rules: {
+    publication: {
+     minlength:5
+  },
+  type: {
+   minlength:5
+},
+
+
+
+    },
+
+      messages: {
+        publication: {
+          minlength: "Please enter at least 5 characters"
+      },
+      type: {
+        minlength: "Please enter at least 5 characters"
+    },
+
+
+
+      },
+
+
+
+    });
+
+});
+</script>
+
+
+  </body>
+</html>

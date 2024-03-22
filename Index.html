@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "uft-8">
+<title>Personal Webpage</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="Stylesheet" href = "Style.css">
+</head>
+<body>
+    <nav>
+        <img src="index.png">
+      <div class =  "wrapperMenu">
+      <ul class="menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="pub.html">Publications</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="research.html">Research Intrest and Programs</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="group.html">Research Group</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="LOGIN.html">Admin</a></li>
+      </ul>
+      </div>
+    </nav>
+
+
+<div class = "wrapper">
+  <br>
+<h1> Biography <i class="fas fa-id-card"></i></h1>
+</div>
+
+<br>
+
+<div class = "wrapperText">
+  <div class = "BioMain">
+  <div class = "Bio1">
+<p> Our names are Faraz Paikar, Rahim Ayub, Ahmad Bukhari, and Syed Ali. We're all students at </a> at <a href="https://ontariotechu.ca/">Ontario Tech University</a>, enrolled in the <a href="https://businessandit.ontariotechu.ca/">Business and Information Technology faculty.</a> We all want to pass this course with high marks and get valuable knowledge that will help us in the future.</p>
+</div>
+
+  <br>
+<div class = "Bio2">
+  <p>We'd all like to maintain a career in cyber security and protect vulnerable businesses and individuals from potential threats and attackers. Additionally, you can learn more about our curriculum by visiting the<a href="https://ontariotechu.ca/programs/undergraduate/computers-and-technology/information-technology-networking-and-information-technology-security/"> Networking & IT Security </a> program. Below is some recent </a><a href="#News"> News</a> items concerning each of us.</p>
+</div>
+</div>
+</div>
+
+
+<br>
+</br>
+
+<div class = "wrapper">
+<img src="OntarioTechPic.jpg"  width = "1000", height = "300">
+</div>
+
+
+<div class = "wrapper">
+<br>
+</br>
+<br>
+
+<h1 id ="News">News <i class="fas fa-newspaper"></i></h1>
+</div>
+
+<br>
+<div class = "wrapperText">
+<div class = "Names">
+  <div class = "name">
+
+
+    <h3>Faraz Paikar</h3>
+    <p>The CFLPA Academy and Ontario Tech University have formed a new relationship to address the different requirements of the CFLPA membership as they make the transition from football to life beyond football.<span id="dots">...</span><span id="more">This amazing new alliance will take advantage of Ontario Tech University's extensive catalogue of degree programmes, graduate diplomas, and certifications to enable CFLPA members get the information and skills they need to enter new fields. CFLPA Academy participants will be able to pursue post-secondary education in new sectors of expertise, with an emphasis on technology and education abilities that are in high demand in today's marketplace.</span></p>
+    <button onclick="myFunction()" id="myBtn"> About Faraz's News</button>
+
+    <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "About Faraz's News";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Hide";
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
+
+</div>
+
+
+<div class = "name">
+<h3> Rahim Ayub</h3>
+<p>Ontario Tech's undergraduate programmes are among the most technologically advanced and modern in the country. <span id="dots1">...</span><span id="more1"> Discover one of the various route programmes available to help you get started on your journey to becoming a medical doctor, or look into other options in the field of medicine and healthcare. This international collaboration exemplifies Ontario Tech's commitment to investing in students and STEM-focused programmes in order to produce medical graduates who will make a difference. Students who successfully complete particular medical and health-related undergraduate programmes with a minimal GPA will be considered for admission to one of our partner institutions' Doctor of Medicine programmes.</span></p>
+  <button onclick="myFunction1()" id="myBtn1"> About Rahim's News</button>
+
+  <script>
+  function myFunction1() {
+    var dots1 = document.getElementById("dots1");
+    var moreText1 = document.getElementById("more1");
+    var btnText1 = document.getElementById("myBtn1");
+
+    if (dots1.style.display === "none") {
+      dots1.style.display = "inline";
+      btnText1.innerHTML = "About Rahim's News";
+      moreText1.style.display = "none";
+    } else {
+      dots1.style.display = "none";
+      btnText1.innerHTML = "Hide";
+      moreText1.style.display = "inline";
+    }
+  }
+  </script>
+</div>
+
+<div class = "name">
+<h3> Ahmad Bukhari</h3>
+<p>For the next 2021-2022 season, Ontario Tech University is expanding COVID-19 immunisation mandates to all varsity student-athletes. <span id="dots2">...</span><span id="more2">This decision was made after negotiations between university management and the Department of Athletics, and the university's Pandemic Response Team backed it up. Due to the significant danger of infection during the pandemic in 2020, varsity sports in Ontario were prohibited. Athletes are frequently in intimate and frequent touch with one another throughout workouts and tournaments due to the dynamic nature of sports. Athletes from different universities also engage with them.</span></p>
+  <button onclick="myFunction2()" id="myBtn2">About Ahmad's News</button>
+
+  <script>
+  function myFunction2() {
+    var dots2 = document.getElementById("dots2");
+    var moreText2 = document.getElementById("more2");
+    var btnText2 = document.getElementById("myBtn2");
+
+    if (dots2.style.display === "none") {
+      dots2.style.display = "inline";
+      btnText2.innerHTML = "About Ahmad's News";
+      moreText2.style.display = "none";
+    } else {
+      dots2.style.display = "none";
+      btnText2.innerHTML = "Hide";
+      moreText2.style.display = "inline";
+    }
+  }
+  </script>
+</div>
+
+<div class = "name">
+<h3> Syed Ali</h3>
+<p>Contemporary labour markets are extremely tough to manage, and it can be impossible to predict or predict new trends.<span id="dots3">...</span><span id="more3">Industries frequently have a small period of time to react to rapid technological advancements. In order to be ready for the creation of jobs, job candidates must react to substantial fluctuations in labour supply curve.Micro-credentials are one of several choices available to today's workers for fast upgrading their expertise and showcasing their new qualifications or professional progress to a future employer.</p>
+  <button onclick="myFunction3()" id="myBtn3">About Syed's News</button>
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+<script src="main.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/1611ad9910.js" crossorigin="anonymous"></script>
+<script>
+function myFunction3() {
+  var dots3 = document.getElementById("dots3");
+  var moreText3 = document.getElementById("more3");
+  var btnText3 = document.getElementById("myBtn3");
+
+  if (dots3.style.display === "none") {
+    dots3.style.display = "inline";
+    btnText3.innerHTML = "About Syed's news";
+    moreText3.style.display = "none";
+  } else {
+    dots3.style.display = "none";
+    btnText3.innerHTML = "Hide";
+    moreText3.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>

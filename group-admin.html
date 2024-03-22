@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="Stylesheet" href = "Style.css">
+    <title>Group Admin Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+  </head>
+  <body>
+    <nav>
+        <img src="index.png">
+
+      <ul class="menu">
+        <li><a href="bio-admin.html" >Home Admin</a></li>
+        <li><a href="pub-admin.html">Publications Admin</a></li>
+        <li><a href="news-admin.html">Press Admin</a></li>
+        <li><a href="research-program-admin.html">Research Intrest and Programs Admin</a></li>
+        <li><a href="teaching-admin.html">Teaching Admin</a></li>
+        <li><a href="group-admin.html">Research Group Admin</a></li>
+        <li><a href="contact-admin.html">Contact Admin</a></li>
+          <li><a href="index.html">Home Page</a></li>
+      </ul>
+    </nav>
+
+    <div style = "text-align : center; "><h1 class = "bkg">Group Admin</h1></div>
+    <div class="AdminForm">
+        <form id="myform" action="" method="post">
+        <p>Student Name</p>
+        <input class ="form-control"type="list" name="student" placeholder="Student name" required><br>
+            <p>Student Info</p>
+        <input class ="form-control"type="text" name="info" placeholder="Student Info " required><br>
+            <p>Student Name</p>
+        <input class ="form-control"type="list" name="student1" placeholder="Student name" required><br>
+        <p>Student Info</p>
+        <input class ="form-control"type="text" name="info1" placeholder="Student Info " required><br>
+            <p>Student Name</p>
+        <input class ="form-control"type="list" name="student2" placeholder="Student name" required><br>
+          <p>Student Info</p>
+        <input class ="form-control"type="text" name="info2" placeholder="Student Info " required><br>
+        <button type="submit">Submit</button>
+
+
+
+
+</div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+
+$("#myform").validate({
+  rules: {
+    student: {
+     minlength:2
+  },
+  student1: {
+   minlength:2
+},
+student2: {
+ minlength:2
+},
+
+
+      info: {
+      minlength:5
+    },
+    info1: {
+    minlength:5
+  },
+  info2: {
+  minlength:5
+},
+    },
+
+      messages: {
+        student: {
+          minlength: "Please enter at least 2 characters"
+      },
+      studen1t: {
+        minlength: "Please enter at least 2 characters"
+    },
+    student2: {
+      minlength: "Please enter at least 2 characters"
+  },
+
+
+            info: {
+                minlength: "Please enter at least 5 characters"
+            },
+            info1: {
+                minlength: "Please enter at least 5 characters"
+            },
+            info2: {
+                minlength: "Please enter at least 5 characters"
+            },
+      },
+
+
+
+    });
+
+});
+</script>
+  </body>
+</html>

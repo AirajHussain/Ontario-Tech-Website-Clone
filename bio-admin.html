@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uploader</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+      <img src="index.png">
+
+    <ul class="menu">
+      <li><a href="bio-admin.html" >Home Admin</a></li>
+      <li><a href="pub-admin.html">Publications Admin</a></li>
+      <li><a href="news-admin.html">Press Admin</a></li>
+      <li><a href="research-program-admin.html">Research Intrest and Programs Admin</a></li>
+      <li><a href="teaching-admin.html">Teaching Admin</a></li>
+      <li><a href="group-admin.html">Research Group Admin</a></li>
+      <li><a href="contact-admin.html">Contact Admin</a></li>
+        <li><a href="index.html">Home Page</a></li>
+    </ul>
+  </nav>
+
+<div class = "profile">
+<div style = "text-align : center; "><h1 class = "bkg">Change Your Profile</h1></div>
+</div>
+
+<div class="uploading-pic">
+  <img src="image.jpg" id="pic">
+  <input type="file" id="file">
+</div>
+
+  <div class = "About">
+<form id = "myform" action= "" method = "post">
+  <textarea placeholder="Write a short bio here" name="about" rows="10" cols="50" required ></textarea>
+</div>
+<br>
+
+<script>const imgDiv = document.querySelector('.uploading-pic');
+const img = document.querySelector('#pic');
+const file = document.querySelector('#file');
+
+
+file.addEventListener('change', function(){
+    //this refers to file
+    const choosedFile = this.files[0];
+
+    if (choosedFile) {
+
+        const reader = new FileReader();
+
+        reader.addEventListener('load', function(){
+            img.setAttribute('src', reader.result);
+        });
+
+        reader.readAsDataURL(choosedFile);
+
+    }
+});
+
+
+$(document).ready(function(){
+
+$("#myform").validate({
+  rules: {
+    about: {
+     minlength:20
+  },
+    },
+
+      messages: {
+        about: {
+          minlength: "Please enter at least 20 characters"
+      },
+      }
+
+
+
+    });
+
+});
+
+</script>
+
+<div class = "ButtonBio">
+  <button type="submit">Submit</button>
+</div>
+
+
+</form>
+</body>
+</html>
